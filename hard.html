@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload = " startGame()" onkeydown = "newspeed(-0.06)" onkeyup="newspeed(0.06)" >
+<body onload="startGame()" 
+      onkeydown="newspeed(-0.06)" 
+      onkeyup="newspeed(0.06)"
+      ontouchstart="newspeed(-0.06)"
+      ontouchend="newspeed(0.06)">
+    <a href="#main" id="skip">Skip to Main Content</a>
     <a href="#main" id="skip">Skip to Main Content</a>
     <div class="header">
         <div class="title-wrapper">
