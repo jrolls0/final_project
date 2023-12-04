@@ -6,6 +6,16 @@ let EasyText;
 
 let GameOver;
 
+document.addEventListener('touchstart', function(event) {
+    event.preventDefault(); // Prevents the default selection behavior
+    newspeed(-0.07); // Call your function
+}, { passive: false }); // Ensure the listener is not passive
+
+document.addEventListener('touchend', function(event) {
+    event.preventDefault(); // Prevents the default selection behavior
+    newspeed(0.07); // Call your function
+}, { passive: false });
+
 function startGame() {
     Mario = new component(40, 80,"red" , 50, 100 );
     Score =  new component("50px", "Times New Roman", "gold", 800, 45, "text");
