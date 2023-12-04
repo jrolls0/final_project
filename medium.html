@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Mario's Marathon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="startGame()" onkeydown="newspeed(-0.1)" onkeyup="newspeed(0.1)">
+    <a href="#main" id="skip">Skip to Main Content</a>
+    <div class="header">
+        <div class="title-wrapper">
+            <a href="home.html" id="gamename">Mario!</a>
+        </div>
+        
+        <div class="link-wrapper">
+            <a href="easy.html" class="header-link">Easy</a>
+            <a href="medium.html" class="header-link">Medium</a>
+            <a href="hard.html" class="header-link">Hard</a>
+        </div>
+    </div>
+    
+    <div class="game" id = "main"></div>
+ 
+    <div class="restart-wrapper">
+        <button class="restartbutt" onmousedown="restartGame()">New Game</button>
+    </div>
+
+    <script src="js/script-medium.js"></script>
+</body>
+</html>
